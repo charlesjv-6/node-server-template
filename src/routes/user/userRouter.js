@@ -1,8 +1,7 @@
 // routes/index.js
 const express = require('express');
 const router = express.Router();
-const hashPassword = require('../../middlewares/encryption')
-const User = require('../../models/user/user'); 
+const User = require('../../models/user/userModel'); 
 
 // Define route to create a new user
 router.post('/create-user', async (req, res) => {
